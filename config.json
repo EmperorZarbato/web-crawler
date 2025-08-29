@@ -1,0 +1,100 @@
+{
+  "app_name": "Web Crawler Pro",
+  "version": "1.0.0",
+  "default_settings": {
+    "delay": 1.0,
+    "timeout": 10,
+    "respect_robots": true,
+    "use_selenium": false,
+    "selenium_wait": 3,
+    "user_agent": "Automático",
+    "max_retries": 3,
+    "export_format": "excel"
+  },
+  "presets": {
+    "ecommerce": {
+      "name": "E-commerce",
+      "selectors": {
+        "title": ["h1", ".product-title", ".title", "title"],
+        "description": [".product-description", ".description", ".summary"],
+        "content": [".product-details", ".product-info", ".specifications"],
+        "links": ["a[href]"],
+        "images": ["img[src]", ".product-image img"]
+      },
+      "filters": {
+        "keywords": ["price", "buy", "product", "shop"],
+        "exclude_keywords": ["out of stock", "unavailable"],
+        "min_length": 50
+      }
+    },
+    "blog": {
+      "name": "Blog/Notícias",
+      "selectors": {
+        "title": ["h1", ".post-title", ".article-title", "title"],
+        "description": [".excerpt", ".summary", "meta[name='description']"],
+        "content": ["article", ".post-content", ".entry-content", ".article-body"],
+        "links": ["a[href]"],
+        "images": ["img[src]", ".featured-image img"]
+      },
+      "filters": {
+        "keywords": ["article", "post", "news"],
+        "exclude_keywords": ["advertisement", "ads", "spam"],
+        "min_length": 200
+      }
+    },
+    "social": {
+      "name": "Redes Sociais",
+      "selectors": {
+        "title": ["h1", ".title", ".post-title"],
+        "description": [".bio", ".description", ".about"],
+        "content": [".post", ".content", ".feed-item"],
+        "links": ["a[href]"],
+        "images": ["img[src]", ".avatar", ".profile-pic"]
+      },
+      "filters": {
+        "keywords": ["social", "profile", "post"],
+        "exclude_keywords": [],
+        "min_length": 20
+      }
+    }
+  },
+  "common_selectors": {
+    "title": ["title", "h1", ".title", "#title", ".page-title", ".post-title"],
+    "description": [
+      "meta[name='description']",
+      "meta[property='og:description']",
+      ".description",
+      ".summary",
+      ".excerpt"
+    ],
+    "content": [
+      "article",
+      ".content",
+      ".post-content",
+      ".entry-content",
+      ".article-body",
+      "main",
+      "#content",
+      ".main-content"
+    ],
+    "links": ["a[href]"],
+    "images": ["img[src]", "img[data-src]"]
+  },
+  "user_agents": {
+    "Chrome Desktop": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+    "Firefox Desktop": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0",
+    "Safari Mobile": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15E148 Safari/604.1",
+    "Edge": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36 Edg/91.0.864.59"
+  },
+  "export_formats": ["excel", "csv", "json"],
+  "supported_protocols": ["http", "https"],
+  "max_url_length": 2048,
+  "max_content_length": 1048576,
+  "default_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "pt-BR,pt;q=0.9,en;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Connection": "keep-alive",
+    "Upgrade-Insecure-Requests": "1"
+  }
+}

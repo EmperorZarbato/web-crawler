@@ -1,0 +1,35 @@
+2025-08-29 12:56:55,296 - INFO - Crawling bem-sucedido: https://httpbin.org/html
+2025-08-29 12:56:57,675 - INFO - Crawling bem-sucedido: https://quotes.toscrape.com
+2025-08-29 12:56:59,883 - INFO - Crawling bem-sucedido: https://example.com
+2025-08-29 12:57:02,893 - INFO - ====== WebDriver manager ======
+2025-08-29 12:57:04,652 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-29 12:57:05,240 - INFO - About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_win32.zip
+2025-08-29 12:57:05,665 - INFO - Driver downloading response is 200
+2025-08-29 12:57:06,428 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-29 12:57:07,557 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-29 12:57:08,578 - INFO - Driver has been saved in cache [C:\Users\Zarbas\.wdm\drivers\chromedriver\win64\114.0.5735.90]
+2025-08-29 12:57:11,444 - ERROR - Erro no crawling com Selenium: Message: unknown error: cannot find Chrome binary
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0070A813+48355]
+	(No symbol) [0x0069C4B1]
+	(No symbol) [0x005A5358]
+	(No symbol) [0x005C1A9E]
+	(No symbol) [0x005C0579]
+	(No symbol) [0x005F0C55]
+	(No symbol) [0x005F093C]
+	(No symbol) [0x005EA536]
+	(No symbol) [0x005C82DC]
+	(No symbol) [0x005C93DD]
+	GetHandleVerifier [0x0096AABD+2539405]
+	GetHandleVerifier [0x009AA78F+2800735]
+	GetHandleVerifier [0x009A456C+2775612]
+	GetHandleVerifier [0x007951E0+616112]
+	(No symbol) [0x006A5F8C]
+	(No symbol) [0x006A2328]
+	(No symbol) [0x006A240B]
+	(No symbol) [0x00694FF7]
+	BaseThreadInitThunk [0x769DFCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x770682AE+286]
+	RtlGetAppContainerNamedObjectPath [0x7706827E+238]
+
