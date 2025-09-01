@@ -2,15 +2,15 @@
 
 Uma aplicação completa de Web Crawler desenvolvida em Python com interface gráfica moderna e recursos avançados.
 
-## ✨ Características
+## Características
 
-### 🎯 Interface Gráfica Moderna
+### Interface Gráfica Moderna
 - Interface desenvolvida com CustomTkinter
 - Design responsivo e intuitivo
 - Abas organizadas por funcionalidade
 - Tema escuro moderno
 
-### 🔧 Recursos de Crawling
+### Recursos de Crawling
 - **HTTP Requests**: Crawling básico com requests + BeautifulSoup
 - **JavaScript Support**: Selenium para sites que usam JavaScript
 - **Múltiplas URLs**: Processamento em lote
@@ -19,19 +19,19 @@ Uma aplicação completa de Web Crawler desenvolvida em Python com interface gr�
 - **Proxy Support**: Suporte a proxies HTTP/HTTPS
 - **Robots.txt**: Respeita automaticamente o robots.txt
 
-### 🎛️ Filtros e Seletores
+###  Filtros e Seletores
 - **Seletores CSS**: Configuração personalizável para extração
 - **Filtros de conteúdo**: Por palavras-chave, tamanho, regex
 - **Presets**: Configurações prontas para e-commerce, blogs, redes sociais
 - **Exclusão de conteúdo**: Filtros para remover spam/ads
 
-### 📊 Resultados e Exportação
+### Resultados e Exportação
 - **Visualização em tabela**: Resultados organizados e navegáveis
 - **Estatísticas detalhadas**: Métricas de performance
 - **Exportação múltipla**: Excel, CSV, JSON
 - **Sistema de logs**: Rastreamento completo de atividades
 
-## 🚀 Instalação
+## Instalação
 
 ### 1. Clone ou baixe o projeto
 ```bash
@@ -53,7 +53,7 @@ python main.py
 python exemplo.py
 ```
 
-## 📦 Dependências
+## Dependências
 
 - `requests` - HTTP requests
 - `beautifulsoup4` - Parsing HTML
@@ -65,7 +65,7 @@ python exemplo.py
 - `openpyxl` - Exportação Excel
 - `lxml` - Parser XML/HTML rápido
 
-## 🎮 Como Usar
+## Como Usar
 
 ### Interface Gráfica
 
@@ -125,7 +125,7 @@ result = crawler.crawl_url(
 crawler.export_results("resultados.xlsx", "excel")
 ```
 
-## 🏗️ Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 Web Crawler/
@@ -139,7 +139,7 @@ Web Crawler/
 └── resultados/         # Diretório para resultados (criado automaticamente)
 ```
 
-## 🔧 Configurações Avançadas
+## Configurações Avançadas
 
 ### Seletores CSS Personalizados
 ```json
@@ -171,7 +171,7 @@ Web Crawler/
 }
 ```
 
-## 🎯 Presets Incluídos
+## Presets Incluídos
 
 ### E-commerce
 - Foco em produtos, preços e descrições
@@ -188,17 +188,7 @@ Web Crawler/
 - Seletores para bio, descrições e feeds
 - Filtros mínimos para máxima captura
 
-## 🚀 Recursos Futuros
-
-- [ ] Crawling distribuído
-- [ ] API REST
-- [ ] Mais formatos de exportação
-- [ ] Agendamento de crawls
-- [ ] Dashboard web
-- [ ] Suporte a mais navegadores (Firefox, Edge)
-- [ ] Integração com bancos de dados
-
-## 🐛 Solução de Problemas
+## Solução de Problemas
 
 ### Erro de importação do Selenium
 ```bash
@@ -219,11 +209,11 @@ pip install customtkinter
 - Verifique se o site permite crawling (robots.txt)
 - Ajuste o delay entre requisições
 
-## 📄 Licença
+## Licença
 
 Este projeto é open source. Use livremente para fins educacionais e comerciais.
 
-## 🤝 Contribuições
+## Contribuições
 
 Contribuições são bem-vindas! Sinta-se à vontade para:
 - Reportar bugs
@@ -232,6 +222,5 @@ Contribuições são bem-vindas! Sinta-se à vontade para:
 
 ---
 
-**Desenvolvido com ❤️ em Python**
-
 *Lembre-se de sempre respeitar o robots.txt dos sites e usar o crawler de forma ética!*
+
